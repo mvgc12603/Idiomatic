@@ -7,6 +7,7 @@ A local-first Chrome extension that helps writers replace rough, literal, or cro
 The extension watches editable text fields as you type. When it sees a bracketed phrase, known idiom, or rough idiom cue, it sends the phrase and surrounding sentence to a local FastAPI backend. The backend first checks a coded multilingual idiom dictionary, then can fall back to an AI + web search  when the idiom is not in the database.
 
 Examples:
+
 Test Site:
 <img width="1228" height="635" alt="Screenshot 2026-07-18 142738" src="https://github.com/user-attachments/assets/de00cd75-47fa-4b72-9a2f-6af13664e7cc" />
 
