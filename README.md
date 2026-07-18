@@ -26,6 +26,13 @@ sobre gustos no hay nada escrito
 - Suppresses literal fallback suggestions when they look invented or word-by-word.
 - Works on regular websites and local plain-text files.
 
+## Upcoming Features
+- Expand functionality to additional languages
+- Improve accuracy with incomplete or inaccurate idioms
+- Migrate static python 'idiom database' externally
+- Connect 'idiom database' to open source sit
+- Allow user to chose which AI or web search backup is used
+
 ## Project Structure
 
 ```text
@@ -60,15 +67,15 @@ idiom-tool/
 1. The Chrome extension detects a candidate phrase while the user types.
 2. It sends the phrase, surrounding sentence, target language setting, and tone hint to `http://localhost:8000/suggest-idiom`.
 3. The backend checks `IDIOM_DATABASE` first.
-4. If the dictionary has a match, it returns a deterministic suggestion.
+4. If the dictionary has a match, it returns suggestions.
 5. If the dictionary misses, the backend can ask Ollama to find a real idiom equivalent.
 6. Fallback suggestions are filtered to avoid literal translations and low-confidence results.
 
 Important behavior:
 
 - If the surrounding sentence is Spanish, the suggestion should be Spanish even if the bracketed idiom is French or English.
-- The bracketed phrase is treated as the source expression, not as the output language signal.
-- The app should prefer no suggestion over a fake literal idiom.
+- The bracketed phrase/expression hints at the sentence structure of the returned suggestion.
+- The app should prefer no suggestion over a fake or literal idiom.
 
 ## Running Locally
 
@@ -108,13 +115,13 @@ cd backend
 Health check:
 
 ```text
-http://127.0.0.1:8000/health
+http://localhost:8000/health
 ```
 
 Test page:
 
 ```text
-http://127.0.0.1:8000/test
+http://localhost:8000/test
 ```
 
 ### Chrome Extension
