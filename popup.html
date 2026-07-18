@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contextual Idiom Translator</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      body {
+        width: 320px;
+        margin: 0;
+        color: #162033;
+        background: #ffffff;
+      }
+
+      main {
+        padding: 16px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 17px;
+        line-height: 1.25;
+        font-weight: 700;
+      }
+
+      p {
+        margin: 0 0 12px;
+        color: #49566f;
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border: 1px solid #d8deea;
+        border-radius: 8px;
+        background: #f7f9fc;
+        font-size: 13px;
+      }
+
+      .dot {
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: #8f6db3;
+        box-shadow: 0 0 0 3px rgba(47, 143, 98, 0.12);
+        flex: 0 0 auto;
+      }
+
+      code {
+        padding: 2px 4px;
+        border-radius: 4px;
+        background: #edf1f7;
+        color: #29344a;
+        font-size: 12px;
+      }
+
+      .note {
+        margin-top: 12px;
+        color: #657188;
+        font-size: 12px;
+        line-height: 1.45;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Contextual Idiom Translator</h1>
+      <p>Type a rough idiom or bracket a phrase like <code>[it is raining frogs]</code>. A small idiom badge appears beside the active editor after a short pause.</p>
+      <div class="status">
+        <span class="dot" aria-hidden="true"></span>
+        <span>Uses the coded idiom dictionary first, then web-grounded local AI at <code>localhost:8000</code></span>
+      </div>
+      <p class="note">For local text files, enable <strong>Allow access to file URLs</strong> in this extension's Chrome details page.</p>
+    </main>
+  </body>
+</html>
