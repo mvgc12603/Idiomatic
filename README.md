@@ -33,6 +33,7 @@ sobre gustos no hay nada escrito
 - Works on regular websites and local plain-text files.
 
 ## Upcoming Features
+- Create app, so as to allow off-browser functionality 
 - Expand functionality to additional languages
 - Improve accuracy with incomplete or inaccurate idioms
 - Migrate static python 'idiom database' externally
