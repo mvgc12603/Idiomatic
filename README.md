@@ -16,11 +16,10 @@ As extention:
 <img width="1475" height="807" alt="Screenshot 2026-07-18 150820" src="https://github.com/user-attachments/assets/453816b5-b6f7-4cbc-a83d-6993a78667e6" />
 
 
-Suggested Spanish idiom:
+Setting:
+<img width="1087" height="852" alt="Screenshot 2026-07-22 063836" src="https://github.com/user-attachments/assets/7107af95-6306-4a81-8df4-4cb9c925cc15" />
+<img width="466" height="467" alt="Screenshot 2026-07-22 063551" src="https://github.com/user-attachments/assets/a10f721c-1a50-41fd-bef8-8fd10415ec39" />
 
-```text
-sobre gustos no hay nada escrito
-```
 
 ## Features
 
