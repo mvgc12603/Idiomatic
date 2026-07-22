@@ -27,6 +27,7 @@ sobre gustos no hay nada escrito
 - Detects idioms and rough phrases while typing in Chrome text fields.
 - Supports cross-language idiom lookup across English, Spanish, and French.
 - Uses the surrounding sentence to infer the target language.
+- Will make multiple suggestions when warrented
 - Prioritizes a coded idiom database before AI fallback.
 - Uses local Ollama by default, so no paid API plan is required.
 - Suppresses literal fallback suggestions when they look invented or word-by-word.
